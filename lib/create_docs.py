@@ -55,5 +55,19 @@ def split_docs_2_para(docs_):
 
 	return return_doc
 
+def split_names_values(split_names_,split_values_):
+	return_names_ = []
+	return_values_ = []
+	for name_index_,name_ in enumerate(split_names_):
+		if '|' in name_:
+			ext_name_li = name_.split('|')
+			return_names_.extend(ext_name_li)
+			ext_values = [split_values_[name_index_]] * len(ext_name_li)
+			return_values_.extend(ext_values)
+		else:
+			# print split_values_[name_index_]
+			return_names_.append(name_)
+			return_values_.append(split_values_[name_index_])
 
+	return return_names_,return_values_
 

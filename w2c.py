@@ -92,8 +92,8 @@ header = ['#']
 for o in orted_x:
 	header.append(o[0].encode('utf8'))
 
-for o in orted_x:
-	print o[0]
+# for o in orted_x:
+	# print o[0]
 
 for i,owner in enumerate(doc_owers):
 	values[i].insert(0,owner)

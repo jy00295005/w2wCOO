@@ -11,7 +11,7 @@ from sklearn import preprocessing
 print np.__version__
 
 #选择共现范围
-co_occ_type = 'para'  #para / doc
+co_occ_type = 'doc'  #para / doc
 
 #目录
 all_pathes = ['data/docs/','data/stop.txt','data/corpus.txt']
